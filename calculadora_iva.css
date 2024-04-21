@@ -27,7 +27,7 @@ body {
     border-radius: 10px;
 }
 
-.keys {
+.display {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 15px;
