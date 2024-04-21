@@ -7,28 +7,35 @@ body {
     margin: 0;
 }
 
-.container {
-    text-align: center;
-}
-
 .calculator {
-    width: 400px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
     background-color: #f4f4f4;
     border-radius: 10px;
     padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
 }
 
 #neto, #iva, #bruto {
     width: 90%;
     font-size: 20px;
     padding: 10px;
-    margin-bottom: 10px;
+    margin: 10px;
     border-radius: 10px;
 }
 
 .display {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 15px;
+    margin-bottom: 20px;
+}
+
+@media (min-width: 600px) {
+    .calculator {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .display {
+        width: 30%;
+    }
 }

@@ -11,8 +11,15 @@
         <h1>Calculador IVA</h1>
         <div class="calculator">
             <div class="display">
+                <label for="neto">Neto: </label>
                 <input type="number" id="neto" oninput="calcularNeto()" placeholder="Neto" >
+            </div>
+            <div class="display">
+                <label for="iva">IVA: </label>
                 <input type="number" id="iva" oninput="calcularIva()" placeholder="IVA">
+            </div>
+            <div class="display">
+                <label for="bruto">Total: </label>
                 <input type="number" id="bruto" oninput="calcularBruto()" placeholder="Total">
             </div>
         </div>
@@ -20,3 +27,8 @@
 </body>
 <script src="calculadora_iva.js"></script>
 </html>
+
+
+
+
+  
