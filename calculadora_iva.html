@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculador IVA</title>
+    <link rel="stylesheet" href="calculadora_iva.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculador IVA</h1>
+        <div class="calculator">
+            <div class="keys">
+                <input type="number" id="neto" oninput="calcularNeto()" placeholder="Neto" >
+                <input type="number" id="iva" oninput="calcularIva()" placeholder="IVA">
+                <input type="number" id="bruto" oninput="calcularBruto()" placeholder="Total">
+            </div>
+        </div>
+    </div>
+</body>
+<script src="calculadora_iva.js"></script>
+</html>
